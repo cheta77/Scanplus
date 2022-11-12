@@ -22,7 +22,6 @@ function Profile(props) {
                                 <text class="font-bold">Christine Dave</text>
                             </div>
                         </div>
-
                         <div class="mt-4">
                             <h6 class="text-xs font-medium text-black">
                                 Response Rate
@@ -34,20 +33,18 @@ function Profile(props) {
                                 Delivered on time
                             </h6>
                             <Progress percent={100} />
-                        </div>
-                        <div class="mt-2">
                             <h6 class="text-xs font-medium text-black">
                                 Scan Completion
                             </h6>
                             <Progress percent={87} />
-                        </div>
+                        </div>{" "}
                     </div>
+                    <div class="mt-2"></div>
                 </div>
 
                 <div class="flex  items-start space-x-4 py-16 px-4 bg-white rounded-2xl w-[24%] ">
                     <div class=" justify-start items-center w-full ">
                         <div class="mb-2">
-                            {" "}
                             <h1 class="text-black text-sm font-semibold">
                                 Recent Activity
                             </h1>

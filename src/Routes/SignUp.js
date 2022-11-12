@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "../CSS/SignUp.css";
+import SignUpmodal from "../components/SignUpmodal";
 
 function SignUp() {
     function deleteHandler() {
@@ -35,7 +36,7 @@ function SignUp() {
                         <img
                             src={ScanPlusLogo}
                             alt="Logo"
-                            className="w-[20%]"
+                            className="w-[30%]"
                         />
                     </div>
 
@@ -67,7 +68,7 @@ function SignUp() {
                         <input
                             className="border-[1.5px] rounded-md border-[#D6DDEB] lg:w-100 w-100 py-3 pl-5"
                             type="text"
-                            name="name"
+                            name="email"
                             placeholder="Email"
                         />
                     </form>
@@ -75,7 +76,7 @@ function SignUp() {
                     <form className=" items-center flex mt-4">
                         <input
                             className="border-[1.5px] rounded-lg border-[#D6DDEB]  lg:w-100  w-100 py-3 pl-5"
-                            type="text"
+                            type="password"
                             name="name"
                             placeholder="Password"
                         />
@@ -83,20 +84,20 @@ function SignUp() {
                     <form className=" items-center flex mt-4">
                         <input
                             className="border-[1.5px] rounded-lg border-[#D6DDEB]  lg:w-100  w-100 py-3 pl-5"
-                            type="text"
+                            type="password"
                             name="name"
                             placeholder="Confirm Password"
                         />
                     </form>
-
+                    <SignUpmodal />
                     <div className=" items-center flex mt-4">
-                        <Link to="/">
+                        {/* <Link to="/">
                             <Button
                                 variant="primary"
                                 title="Sigin Up"
                                 className="bg-[#1C4D94] border-[1.5px] border-[#1C4D94] rounded-lg  py-3 lg:w-96 md:w-96 w-64 text-sm  text-[white]"
                             />
-                        </Link>
+                        </Link> */}
                     </div>
 
                     {/* <div className="justify-center items-center flex mt-10">

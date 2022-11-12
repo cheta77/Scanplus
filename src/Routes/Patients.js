@@ -13,78 +13,9 @@ import { BsHouse } from "react-icons/bs";
 import Button from "../components/Button";
 import ConsultantCard from "../components/ConsultantsCard";
 
-let items = [
-    {
-        title: "Hello world",
-        tutor_name: "john doe",
-        tutor_title: "web developer",
-        star: 4.5,
-        price: "500",
-        modules: 24,
-        reviews: 123,
-        students: 242,
-    },
-    {
-        title: "Hello world",
-        tutor_name: "john doe",
-        tutor_title: "web developer",
-        star: 4.5,
-        price: "500",
-        modules: 24,
-        reviews: 123,
-        students: 242,
-    },
-    {
-        title: "Hello world",
-        tutor_name: "john doe",
-        tutor_title: "web developer",
-        star: 4.5,
-        price: "500",
-        modules: 24,
-        reviews: 123,
-        students: 242,
-    },
-    {
-        title: "Hello world",
-        tutor_name: "john doe",
-        tutor_title: "web developer",
-        star: 4.5,
-        price: "500",
-        modules: 24,
-        reviews: 123,
-        students: 242,
-    },
-    {
-        title: "Hello world",
-        tutor_name: "john doe",
-        tutor_title: "web developer",
-        star: 4.5,
-        price: "500",
-        modules: 24,
-        reviews: 123,
-        students: 242,
-    },
-    {
-        title: "Hello world",
-        tutor_name: "john doe",
-        tutor_title: "web developer",
-        star: 4.5,
-        price: "500",
-        modules: 24,
-        reviews: 123,
-        students: 242,
-    },
-];
-
-let totals = [
-    {
-        number: "0,000",
-    },
-];
-
 function Patients(props) {
     return (
-        <div class="flex justify-start items-start bg-[#E7F0FA]">
+        <div class="flex h-screen justify-start items-start bg-[#E7F0FA]">
             <div class="w-full ">
                 <Header />
                 <div class="flex justify-start items-start space-x-4 ">
@@ -108,18 +39,8 @@ function Patients(props) {
                                 className="  bg-[#1C4D94]  py-1 px-3 text-sm  text-[#FFFFFF] rounded-md"
                             />
                         </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full mb-2 px-16">
-                            <div class="w-full bg-white justify-center rounded-lg">
-                                {/* <div class="">
-                                    <PatientsCard
-                                        ImgUrl={google}
-                                        alt="file"
-                                        class="w-5 h-5"
-                                    />
-                                </div> */}
-                            </div>
-
-                            <ConsultantCard />
+                        <div class="grid grid-cols-1 w-full mb-2 px-16">
+                            {/* <ConsultantCard /> */}
                         </div>
                     </div>
                 </div>

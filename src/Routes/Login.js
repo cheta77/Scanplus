@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "../CSS/SignUp.css";
 
-function Login() {
+function Login(props) {
     function deleteHandler() {
         alert("Clicked");
     }
@@ -38,7 +38,7 @@ function Login() {
                         <img
                             src={ScanPlusLogo}
                             alt="Logo"
-                            className="w-[20%]"
+                            className="w-[30%]"
                         />
                     </div>
 
@@ -55,7 +55,7 @@ function Login() {
 
                 <div className="mt-5 py-5 ">
                     <div className="flex">
-                        <p className="font-semibold text-2xl">SignIn</p>
+                        <p className="font-semibold text-2xl">Sign In</p>
                     </div>
 
                     {/* <div className="justify-center items-center flex ">
@@ -82,7 +82,7 @@ function Login() {
                     <form className=" items-center flex mt-5">
                         <input
                             className="border-[1.5px] rounded-lg border-[#D6DDEB]  lg:w-100  w-100 py-3 pl-5"
-                            type="text"
+                            type="password"
                             name="name"
                             placeholder="Password"
                         />
@@ -100,10 +100,9 @@ function Login() {
 
                     <div className="justify-start items-center flex mt-10">
                         <p className="text-[#7C8493]">
-                            Forget Password? {""}
+                            Forget Password?
                             <Link to="/SignUp">
                                 <button className="text-[#1C4D94]">
-                                    {" "}
                                     Reset
                                 </button>
                             </Link>
