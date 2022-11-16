@@ -24,10 +24,8 @@ function SignUpmodal() {
                 show={show}
                 onHide={handleClose}
                 backdrop="static"
-                backdrop-bg="#0d6efd"
-                backdrop-opacity="0.3"
                 keyboard={false}
-                size="md"
+                size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
@@ -88,7 +86,7 @@ function SignUpmodal() {
                         </form>
                     </div>
                     <div className=" justify-content-center flex mt-4 mb-5">
-                        <Link to="/ClientDashboard">
+                        <Link to="/">
                             <Button
                                 variant="primary"
                                 title="Process"

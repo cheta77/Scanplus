@@ -13,9 +13,9 @@ function SignUp() {
     }
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 h-screen w-full px-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full px-10 overflow-hidden">
             <div
-                className="hidden sm:block lg:w-[95%] h-100 bg-left bg-cover "
+                className="hidden md:block lg:w-[95%] md:w-[95%] bg-left bg-cover "
                 style={{
                     backgroundImage: `url(${Sideright})`,
                     position: "static",
@@ -26,17 +26,18 @@ function SignUp() {
                         src={Radiographer}
                         alt="Radiographer"
                         className="w-[94%]"
+                        position="static"
                     />
                 </div>
             </div>
 
             <div className="w-full h-full px-10 ">
-                <div className=" flex flex-row lg:w-[100%] lg:h-50 sm:w-[100%]  justify-between items-center ">
+                <div className=" flex flex-row lg:w-[100%] md:w-[100%]  justify-between items-center ">
                     <div className="bg-white">
                         <img
                             src={ScanPlusLogo}
                             alt="Logo"
-                            className="w-[30%]"
+                            className="w-[40%] md:w-[40%]"
                         />
                     </div>
 
@@ -45,7 +46,7 @@ function SignUp() {
                             <Button
                                 variant="primary"
                                 title="Sigin In"
-                                className=" border-[1.5px] border-[#1C4D94] rounded-lg  py-3 lg:w-40 md:w-20 w-30 text-sm  text-[#1C4D94]"
+                                className=" border-[1.5px] border-[#1C4D94] rounded-lg  py-3 lg:w-40 md:w-40 w-40 text-md  text-[#1C4D94]"
                             />
                         </Link>
                     </div>
@@ -56,7 +57,7 @@ function SignUp() {
                         <p className="font-semibold text-2xl">Register</p>
                     </div>
 
-                    <form className=" items-center flex mt-4">
+                    <form className=" items-center mt-4">
                         <input
                             className="border-[1.5px] rounded-md border-[#D6DDEB] lg:w-100 w-100 py-3 pl-5"
                             type="text"
@@ -64,40 +65,49 @@ function SignUp() {
                             placeholder="FullName"
                         />
                     </form>
-                    <form className=" items-center flex mt-4">
+                    <form className=" items-center mt-4">
                         <input
                             className="border-[1.5px] rounded-md border-[#D6DDEB] lg:w-100 w-100 py-3 pl-5"
-                            type="text"
+                            type="email"
                             name="email"
                             placeholder="Email"
                         />
                     </form>
 
-                    <form className=" items-center flex mt-4">
+                    <form className=" items-center mt-4">
                         <input
                             className="border-[1.5px] rounded-lg border-[#D6DDEB]  lg:w-100  w-100 py-3 pl-5"
                             type="password"
-                            name="name"
+                            name="password"
                             placeholder="Password"
                         />
                     </form>
-                    <form className=" items-center flex mt-4">
+                    <form className=" items-center mt-4">
                         <input
                             className="border-[1.5px] rounded-lg border-[#D6DDEB]  lg:w-100  w-100 py-3 pl-5"
                             type="password"
-                            name="name"
+                            name="password"
                             placeholder="Confirm Password"
                         />
                     </form>
-                    <SignUpmodal />
-                    <div className=" items-center flex mt-4">
-                        {/* <Link to="/">
+                    {/* <form className=" items-center mt-4">
+                        <select className="border-[1.5px] rounded-lg border-[#D6DDEB]  lg:w-100  w-100 py-3 pl-5">
+                            <option selected disabled>
+                                Who are you?
+                            </option>
+                            <option>Consultants</option>
+                            <option>Client</option>
+                        </select>
+                    </form> */}
+                    {/* <SignUpmodal /> */}
+                    <div className=" items-center mt-4">
+                        <Link to="/ConDashboard">
                             <Button
                                 variant="primary"
-                                title="Sigin Up"
-                                className="bg-[#1C4D94] border-[1.5px] border-[#1C4D94] rounded-lg  py-3 lg:w-96 md:w-96 w-64 text-sm  text-[white]"
+                                title="Sign Up"
+                                className="bg-[#1C4D94] border-[1.5px] border-[#1C4D94] rounded-lg  py-3 lg:w-100 md:w-100 w-full text-md  text-[white]"
                             />
-                        </Link> */}
+                        </Link>
                     </div>
 
                     {/* <div className="justify-center items-center flex mt-10">

@@ -1,18 +1,18 @@
 import "../App.css";
-import Sidebar from "./Sidebar.js";
-import ConsultantCard from "../components/ConsultantsCard";
-import TotalCard from "../components/TotalCard.js";
-import NewConstCard from "../components/NewConstCard.js";
-import TotalReportsCard from "../components/TotalReportsCard.js";
+import Sidebar from "../Sidebar.js";
+import ConsultantCard from "../../components/ConsultantsCard";
+import TotalCard from "../../components/TotalCard.js";
+import NewConstCard from "../../components/NewConstCard.js";
+import TotalReportsCard from "../../components/TotalReportsCard.js";
 import google from "../assets/icons/google.png";
 import Man1 from "../assets/Man1.png";
 import Man2 from "../assets/Man2.png";
 import Man3 from "../assets/Man3.png";
-import Header from "../components/Header";
+import Header from "../../components/Header";
 import { BsHouse } from "react-icons/bs";
-import Button from "../components/Button";
+import Button from "../../components/Button";
 import React, { Component } from "react";
-import Profile from "./Profile";
+import Profile from "../Profile";
 import SignOut from "../assets/icons/SignOut.png";
 
 const CreateReport = (props) => {
@@ -38,7 +38,7 @@ const CreateReport = (props) => {
         <div className="flex justify-start items-start  ">
             <div className=" h-full lg:w-[91%] md:w-[91%] sm:w-[50%] justify-start items-start">
                 <div className=" flex flex-row justify-between ">
-                    <form className=" flex lg:w-[67%] justify-start mt-4">
+                    <form className="  lg:w-[67%] justify-start mt-4">
                         <label>
                             <p>Report</p>
                             <input
@@ -50,7 +50,7 @@ const CreateReport = (props) => {
                         </label>
                     </form>
 
-                    <form className="  lg:w-[60%] justify-start flex mt-4">
+                    <form className="  lg:w-[60%] justify-start  mt-4">
                         <label>
                             <p>Report Details</p>
                             <input

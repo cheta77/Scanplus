@@ -51,11 +51,11 @@ function Sidebar(props) {
 			: 'bg-transparent text-gray-400'} rounded-l-3xl text-sm font-semibold"
                     >
                         <img src={Radiographers} alt="Logo" class="w-4 h-4" />
-                        <a href="/" class="font-normal pl-3">
+                        <a href="/Radiographer" class="font-normal pl-3">
                             <h5>Radiographers</h5>
                         </a>
                     </li>
-                    <li
+                    {/* <li
                         class=" p-2 w-full flex  items-center {page == 'privacy'
 			? 'bg-gray-200 text-primary'
 			: 'bg-transparent text-gray-400'} rounded-l-3xl text-sm font-semibold"
@@ -64,8 +64,8 @@ function Sidebar(props) {
                         <a href="/Patients" class="font-normal pl-3">
                             <h5>Patient</h5>
                         </a>
-                    </li>
-                    <li
+                    </li> */}
+                    {/* <li
                         class=" p-2 w-full flex  items-center {page == 'notifications'
 			? 'bg-gray-200 text-primary'
 			: 'bg-transparent text-gray-400'} rounded-l-3xl text-sm font-semibold"
@@ -74,7 +74,7 @@ function Sidebar(props) {
                         <a href="/Report" class="font-normal pl-3">
                             <h5>Report</h5>
                         </a>
-                    </li>
+                    </li> */}
                 </div>
 
                 <li

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Button from "../components/Button";
 const SignupCon = () => {
     return (
-        <div className="flex h-screen w-screen bg-gray-100 justify-center py-12">
+        <div className="flex  w-screen bg-gray-100 justify-center py-12">
             <div className="  items-center justify-center shadow-lg md:w-[60%] sm:w-[50%] py-5 mt-12 mb-5">
                 <div className=" flex  justify-end  ">
                     <div className="justify-center items-center  w-[25%]">
