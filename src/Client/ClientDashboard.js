@@ -29,7 +29,7 @@ class ClientDashboard extends Component {
 
     render() {
         return (
-            <div class="flex justify-start items-start bg-[#E7F0FA]">
+            <div class="flex justify-start items-start bg-[#E7F0FA] overflow-hidden">
                 <div class="w-full ">
                     <Header />
                     <div class="flex justify-start items-start space-x-4 ">

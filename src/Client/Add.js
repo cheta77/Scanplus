@@ -31,7 +31,7 @@ const Add = (props) => {
 
     // render() {
     return (
-        <div className=" max-w-6xl w-full justify-center items-start overflow-hidden py-5">
+        <div className=" max-w-6xl w-full justify-center items-start py-5">
             <div className="  grid grid-cols-2 gap-6 justify-start items-start">
                 <div className=" col-span-2 lg:col-span-1">
                     <form className=" ">
@@ -125,16 +125,11 @@ const Add = (props) => {
                                     <option>Wrist</option>
                                     <option>Hand</option>
                                 </optgroup>
-                                <optgroup label="IMAGING MODALITIES:">
-                                    <option> X-RAY </option>
-                                    <option>MAMMOGRAPHY </option>
-                                    <option>CT</option>
-                                    <option>MRI</option>
-                                </optgroup>
                             </select>
                         </label>
                     </form>
                 </div>
+
                 <div className=" col-span-2 lg:col-span-1">
                     <label>
                         <p>Location</p>
@@ -146,6 +141,24 @@ const Add = (props) => {
                         />
                     </label>
 
+                    <form>
+                        <label>
+                            <p>Study Upload</p>
+                            <select className="py-3 px-5 md:text-xl w-[160%]  border-[1.5px] rounded-lg border-[#D6DDEB]">
+                                <option selected disabled>
+                                    Choose Study
+                                </option>
+                                <optgroup label="IMAGING MODALITIES:">
+                                    <option> X-RAY </option>
+                                    <option>MAMMOGRAPHY </option>
+                                    <option>CT</option>
+                                    <option>MRI</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                    </form>
+                </div>
+                <div className=" col-span-2 lg:col-span-1">
                     <label>
                         <p>Priority</p>
                         <select className="py-3 px-5  md:text-xl w-[180%] border-[1.5px] rounded-lg border-[#D6DDEB] ">
