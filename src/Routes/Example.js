@@ -1,21 +1,19 @@
-
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class Example extends Component {
     constructor(props) {
-        super(props)
+        super(props);
 
         // Set initial state
-        this.state = { msg: 'Hi, There!' }
+        this.state = { msg: "Hi, There!" };
 
         // Binding this keyword
-        this.handleClick = this.handleClick.bind(this)
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick() {
-
         // Changing state
-        this.setState({ msg: 'Welcome to the React world!' })
+        this.setState({ msg: "Welcome to the React world!" });
     }
 
     render() {
@@ -23,18 +21,13 @@ class Example extends Component {
             <div>
                 <h2>Message :</h2>
 
-
                 <p>{this.state.msg}</p>
 
-
-
                 {/* Set click handler */}
-                <button onClick={this.handleClick}>
-                    Click here!
-                </button>
+                <button onClick={this.handleClick}>Click here!</button>
             </div>
-        )
+        );
     }
 }
 
-export default Example
+export default Example;

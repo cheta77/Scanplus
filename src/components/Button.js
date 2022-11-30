@@ -6,6 +6,7 @@ function Button(props) {
         return (
             <div>
                 <button
+                    onClick={props.onClick}
                     className={` flex items-center text-sm justify-around ${props.className}`}
                 >
                     {props.title}
@@ -16,6 +17,7 @@ function Button(props) {
         return (
             <div>
                 <button
+                    onClick={props.onClick}
                     className={` flex text-sm items-center justify-around ${props.className}`}
                 >
                     <> {props.title}</>
@@ -28,6 +30,7 @@ function Button(props) {
         return (
             <div>
                 <button
+                    onClick={props.onClick}
                     className={`flex text-sm items-center justify-around ${props.className}`}
                 >
                     <> {props.title}</>

@@ -10,8 +10,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // }
 function Header(props) {
     return (
-        <div class="justify-between bg-[#E7F0FA] items-center py-4 flex self-start shadow-inner  fixed w-[100%] px-2">
-            <div class="pl-56 ">
+        <div class="justify-between bg-[#E7F0FA] items-center py-4 flex self-start shadow-inner  fixed w-[99%]">
+            <div class="pl-60">
                 <form>
                     <input
                         class="bg-white justify-self-center  h-12 w-96 pl-6 rounded-lg"
@@ -23,11 +23,11 @@ function Header(props) {
             </div>
             <div class="justify-evenly bg-[#E7F0FA] flex w-40 px-6 self-end">
                 <Link to="/SignUp">
-                    <img src={Settings} alt="Heyy" class="w-8 h-8" />
+                    <img src={Settings} class="w-8 h-8" />
                 </Link>
 
                 <Link to="/Login">
-                    <img src={Bell} alt="Heyy" class="w-8 h-8" />
+                    <img src={Bell} class="w-8 h-8" />
                 </Link>
             </div>
         </div>

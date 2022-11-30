@@ -1,4 +1,4 @@
-/* @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 	.container header .header-nav-area #nav_container {
 		display: flex;
 	}
@@ -13,7 +13,7 @@
 .App-logo {
 	height: 10vmin;
 	pointer-events: visible;
-} */
+}
 
 /* @font-face {
   font-family: 'Poppins';
@@ -45,7 +45,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-/* .more {
+.more {
 	font-family: Poppins;
 	font-weight: 600;
 	font-size: 1.4pc;
@@ -74,7 +74,7 @@ code {
 	margin-left: 180px;
 	color: #a8adb7;
 	font-family: 'poppins2';
-} */
+}
 
 .textInput02 {
 	margin-top: 1.5rem;

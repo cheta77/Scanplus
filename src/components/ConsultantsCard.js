@@ -11,7 +11,7 @@ export default function ConsultantCard() {
     return (
         <MDBTable align="middle" className="bg-[#F5F5F5] rounded-md">
             <MDBTableHead>
-                <tr>
+                <tr className="align-items-center ">
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Pay</th>
