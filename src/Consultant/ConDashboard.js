@@ -5,6 +5,7 @@ import ConsultantCard from "../components/ConsultantsCard";
 import Header from "../components/Header";
 import { BsHouse } from "react-icons/bs";
 import Button from "../components/Button";
+import PatientsCon from "./PatientsCon";
 import PatientsCard from "../components/PatientsCard";
 
 function ConDashboard(props) {
@@ -30,7 +31,7 @@ function ConDashboard(props) {
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full mb-2 px-16 shadow" />
 
-                        <PatientsCard />
+                        <PatientsCon />
                     </div>
                 </div>
             </div>
